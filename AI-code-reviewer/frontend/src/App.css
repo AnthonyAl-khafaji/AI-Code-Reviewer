@@ -1,0 +1,163 @@
+/* ===== Reset & base ===== */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f6f8fb;
+  color: #0f172a;
+}
+
+/* ===== Layout ===== */
+main {
+  height: 100vh;               /* grid container in App.jsx */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* ===== Panels ===== */
+.panel {
+  background: linear-gradient(145deg, #ffffff, #f9fbff);
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;               /* so inner scrollers can work */
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.panel-header {
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+/* ===== Titles ===== */
+/* AI Code Reviewer title */
+.panel-header h1 {
+  font-size: 1.9rem;   /* adjust just AI Code Reviewer */
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+}
+
+/* Chat title */
+.panel-header h2 {
+  font-size: 1.5rem;   /* adjust just Chat */
+  font-weight: 600;
+  margin: 0;
+  color: #0f172a;
+}
+
+/* ===== Inputs / Textareas / Buttons ===== */
+
+/* === snippet.py box (filename input) === */
+.input {
+  width: 100%;
+  border: 1px solid #dbe1ea;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+  padding: 10px 12px;
+  font-size: 0.95rem;      /* adjust size of snippet.py text */
+  font-weight: 500;        /* boldness of text */
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.35);
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid #dbe1ea;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.textarea:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.35);
+}
+
+.textarea { resize: vertical; }
+.textarea.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.btn {
+  border: 1px solid #dbe1ea;
+  background: #eef2ff;
+  color: #1f2937;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.btn:hover { filter: brightness(0.98); }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+
+/* ===== Cards (results) ===== */
+.card {
+  background: #fbfdff;
+  border: 1px solid #e8eef6;
+  border-radius: 12px;
+  padding: 12px;
+}
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 6px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #eaf1ff;
+  color: #1e40af;
+  border: 1px solid #d5e3ff;
+}
+
+/* ===== Chat area ===== */
+.chat-scroll {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  padding: 8px;
+}
+
+/* Chat bubbles */
+.bubble {
+  max-width: 92%;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+  border: 1px solid #e6ecf3;
+  box-shadow: 0 3px 10px rgba(2, 6, 23, .06);
+}
+.bubble.bot {
+  align-self: flex-start;
+  background: #f5f7fb;
+}
+.bubble.me {
+  align-self: flex-end;
+  background: #eef6ff;
+  border-color: #d4e7ff;
+}
+
+/* ===== Page Background polish ===== */
+body {
+  background:
+    radial-gradient(900px 600px at 15% -10%, #eef3ff 0%, rgba(246,248,251,0) 60%),
+    radial-gradient(700px 500px at 120% 20%, #f0f7ff 0%, rgba(246,248,251,0) 55%),
+    #f6f8fb;
+}
