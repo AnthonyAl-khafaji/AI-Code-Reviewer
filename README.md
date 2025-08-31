@@ -1,4 +1,4 @@
-# CSI 3370 - Capstone Project (AI Code Reviewer)
+# AI Code Reviewer
 
 This project is an AI-powered code reviewer built using a Python Flask backend and a React frontend. The application allows users to paste code for automated analysis (linting, complexity, and security) and chat with an AI assistant about improvements, bugs, or suggestions.
 
