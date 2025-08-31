@@ -6,7 +6,7 @@ This project is an AI-powered code reviewer built using a Python Flask backend a
 
 - Static analysis with:
 
-- **Ruff** (linting & style issues)
+  - Ruff (linting & style issues)
 
 - **Radon** (maintainability index & complexity metrics)
 
