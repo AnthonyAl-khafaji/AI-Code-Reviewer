@@ -8,9 +8,9 @@ This project is an AI-powered code reviewer built using a Python Flask backend a
 
   - Ruff (linting & style issues)
 
-- **Radon** (maintainability index & complexity metrics)
+  - Radon (maintainability index & complexity metrics)
 
-- **Bandit** (security checks)
+  - Bandit (security checks)
 
 - AI-generated scores for readability, complexity, security, and testing
 
@@ -38,13 +38,13 @@ This project is an AI-powered code reviewer built using a Python Flask backend a
 
 - The app will display:
 
-- **Summary** (maintainability index, cyclomatic complexity, lint, and security findings)
+  - Summary (maintainability index, cyclomatic complexity, lint, and security findings)
 
-- **Scores** (readability, complexity, security, testing)
+  - Scores (readability, complexity, security, testing)
 
-- **Issues list** (lint, syntax, security)
+  - Issues list (lint, syntax, security)
 
-- **Actionable suggestions**
+  - Actionable suggestions
 
 - Use the Chat panel to ask AI about your code, errors, or improvements
 
